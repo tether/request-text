@@ -5,13 +5,25 @@
 [![Downloads](https://img.shields.io/npm/dm/request-text.svg)](http://npm-stat.com/charts.html?package=request-text)
 [![guidelines](https://tether.github.io/contribution-guide/badge-guidelines.svg)](https://github.com/tether/contribution-guide)
 
-Parse text/plain requests
+Parse text/plain HTTP requests.
 
 ## Usage
 
 ```js
+const http = require('http')
+const parse = require('request-text')
 
+
+http.createServer((req, res) => {
+  parse(req, options)
+    .then(text => {
+      // do something with text
+    })
+})
 ```
+
+Options are the same passed to the module [inflate-body](https://github.com/tether/inflate-body) plus:
+
 
 ## Installation
 
@@ -29,9 +41,9 @@ For support, bug reports and or feature requests please make sure to read our
 
 ## Contribution
 
-The open source community is very important to us. If you want to participate to this repository, please make sure to read our <a href="https://github.com/tether/contribution-guide" target="_blank">guideline</a> before making any pull request. If you have any related project, please let everyone know in our wiki.
-## License
+The open source community is very important to us. If you want to participate to this repository, please make sure to read our <a href="https://github.com/tether/contribution-guide" target="_blank">guidelines</a> before making any pull request. If you have any related project, please let everyone know in our wiki.
 
+## License
 
 The MIT License (MIT)
 

@@ -24,5 +24,8 @@
   "homepage": "https://github.com/tether/request-text#readme",
   "devDependencies": {
     "tape": "*"
+  },
+  "dependencies": {
+    "inflate-body": "^1.0.1"
   }
 }
