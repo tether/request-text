@@ -1,0 +1,28 @@
+{
+  "name": "request-text",
+  "version": "1.0.0",
+  "description": "Parse text/plain requests",
+  "main": "index.js",
+  "scripts": {
+    "test": "tape test/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tether/request-text.git"
+  },
+  "keywords": [
+    "request",
+    "text",
+    "body",
+    "http"
+  ],
+  "author": "Petrofeed Inc",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tether/request-text/issues"
+  },
+  "homepage": "https://github.com/tether/request-text#readme",
+  "devDependencies": {
+    "tape": "*"
+  }
+}
