@@ -35,7 +35,7 @@ function setup (request, options, ...args) {
   const encoding = request.headers['content-encoding'] || 'identity'
   return Object.assign({}, options, {
     encoding: options.encoding || 'utf-8',
-    limit: options.limit || '1mb'
+    limit: options.limit || '1mb',
     length: (len && encoding === 'identity') ? ~~len : options.length
   }, ...args)
 }
